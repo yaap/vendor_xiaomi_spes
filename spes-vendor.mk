@@ -509,6 +509,7 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
+    libtinyxml \
     android.hardware.secure_element@1.0-impl \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
