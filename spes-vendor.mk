@@ -618,6 +618,7 @@ PRODUCT_PACKAGES += \
     consumerir.bengal \
     displayfeature.default \
     fingerprint.fpc.default \
+    fingerprint.fpc.bengal \
     fingerprint.goodix.default \
     sensors.elliptic@2.0 \
     vendor.qti.gnss@4.0-impl \
