@@ -151,7 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
@@ -492,10 +491,8 @@ PRODUCT_PACKAGES += \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
-    libshoebox \
     libtinyxml \
-    libcld80211 \
-    libcrypto-v34 \
+    libshoebox \
     android.hardware.secure_element@1.0-impl \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
@@ -705,9 +702,9 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libdataitems \
-    libdisp-aba \
     libdisplayfeature \
     libdisplayfeatureservice \
+    libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
     libdng_sdk2vendor \
@@ -834,7 +831,6 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libsoc_helper \
     libsoc_helper_jni \
-    libspl \
     libssc \
     libssc_default_listener \
     libssd \
@@ -1051,8 +1047,8 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    vendor.qti.gnss@4.0-service.xml \
     vendor.xiaomi.hardware.mtdservice@1.3 \
+    vendor.qti.gnss@4.0-service.xml \
     chargeonlymode \
     ATFWD-daemon \
     STFlashTool \

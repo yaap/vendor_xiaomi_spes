@@ -4181,24 +4181,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "fingerprint.fpc.bengal",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/fingerprint.fpc.bengal.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libhidlbase", "libhidltransport", "android.hardware.biometrics.fingerprint@2.1", "com.fingerprints.extension@1.0", "libQSEEComAPI", "libion", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "fingerprint.goodix.default",
 	owner: "xiaomi",
 	strip: {
@@ -4208,6 +4190,24 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/fingerprint.goodix.default.so"],
 			shared_libs: ["libcutils", "libgf_hal", "libgoodixhwfingerprint", "libc", "libm", "libdl", "liblog", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "fingerprint.fpc.bengal",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/hw/fingerprint.fpc.bengal.so"],
+			shared_libs: ["liblog", "libutils", "libcutils", "libhidlbase", "libhidltransport", "android.hardware.biometrics.fingerprint@2.1", "com.fingerprints.extension@1.0", "libQSEEComAPI", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -6766,23 +6766,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.3",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so"],
-			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.2", "vendor.xiaomi.hardware.mtdservice@1.1", "vendor.xiaomi.hardware.mtdservice@1.0", "libhidlbase", "libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libnetmgr",
 	owner: "xiaomi",
 	strip: {
@@ -6848,6 +6831,23 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.xiaomi.hardware.mtdservice@1.3",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so"],
+			shared_libs: ["vendor.xiaomi.hardware.mtdservice@1.2", "vendor.xiaomi.hardware.mtdservice@1.1", "vendor.xiaomi.hardware.mtdservice@1.0", "libhidlbase", "libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -7888,23 +7888,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libspl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libspl.so"],
-			shared_libs: ["libcutils", "liblog", "libQSEEComAPI", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libssc",
 	owner: "xiaomi",
 	strip: {
@@ -8288,32 +8271,13 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwvhidl.so"],
-			shared_libs: ["android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "android.hidl.memory@1.0", "libbase", "libcrypto-v34", "libhidlbase", "libhidlmemory", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcrypto-v34",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcrypto-v34.so"],
-			shared_libs: ["libc", "libm", "libdl", ],
+			shared_libs: ["libcrypto_shim", "android.hardware.drm@1.0", "android.hardware.drm@1.1", "android.hardware.drm@1.2", "android.hardware.drm@1.3", "android.hidl.memory@1.0", "libbase", "libcrypto", "libhidlbase", "libhidlmemory", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }
-
 
 cc_prebuilt_library_shared {
 	name: "libwvkeybox",
@@ -8443,11 +8407,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/mediadrm/libwvdrmengine.so"],
-			shared_libs: ["libbase", "libcrypto", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcrypto_shim", "libbase", "libcrypto", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	allow_undefined_symbols: true,
 	relative_install_path: "mediadrm",
 	prefer: true,
 	soc_specific: true,
@@ -12387,3 +12350,4 @@ install_symlink {
 	installed_location: "lib64/libq3dtools_adreno.so",
 	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
+
