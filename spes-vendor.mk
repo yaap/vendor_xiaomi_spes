@@ -421,7 +421,6 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
-    libswvdec \
     libsysmon_cdsp_skel \
     libthermalclient \
     vendor.qti.hardware.dsp@1.0 \
@@ -433,17 +432,6 @@ PRODUCT_PACKAGES += \
     audio.primary.bengal \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxDsdDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxVideoDSMode \
-    libOmxWmaDec \
     liba2dpoffload \
     libacdb-fts \
     libacdbloader \
@@ -462,7 +450,6 @@ PRODUCT_PACKAGES += \
     libcirrusspkrprot \
     libcomprcapture \
     libdrc \
-    libdsd2pcm \
     libexthwplugin \
     libfastcrc \
     libgcs-calwrapper \
