@@ -614,8 +614,8 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     consumerir.bengal \
     displayfeature.default \
-    fingerprint.fpc.default \
     fingerprint.fpc.bengal \
+    fingerprint.fpc.default \
     fingerprint.goodix.default \
     sensors.elliptic@2.0 \
     vendor.qti.gnss@4.0-impl \
@@ -965,6 +965,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
+    vendor.xiaomi.hardware.mtdservice@1.3 \
     capi_v2_aptX_CLHDADV_Encoder \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     capi_v2_aptX_Classic \
@@ -1047,7 +1048,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    vendor.xiaomi.hardware.mtdservice@1.3 \
     vendor.qti.gnss@4.0-service.xml \
     chargeonlymode \
     ATFWD-daemon \
@@ -1090,7 +1090,6 @@ PRODUCT_PACKAGES += \
     ks \
     loc_launcher \
     lowi-server \
-    mi_thermald \
     mlid \
     mlipayd@1.1 \
     msm_irqbalance \
